@@ -1,0 +1,73 @@
+class Main{
+	function void main(){
+		var character a;
+		var int bcount;
+		var char kb;
+
+		var int leafloc;
+		var ground grd;
+		do HP.new(5,237);
+		do BossHP.new(96,10,0,261);
+
+		let grd = ground.new();
+		
+		//do grd.draw();
+		let leafloc = 704;
+		do Screen.drawRectangle(0,0,429,21);
+		while(leafloc < 736){
+			do leaf.drawbitmap(0,leafloc);
+			let leafloc = leafloc + 1;
+		}
+		
+		do TreeBoss.drawtree(429,0);
+		do grd.drawbitmap();
+		do HP.drawwhole();
+		do BossHP.drawBossHPall();
+
+		/*while(test<50){
+			do BossHP.lossBosshealth();
+			let test = test + 1;
+		}*/
+		
+		//do leaf.drawl(0, 0);
+
+		let a=character.new(30,20);
+		do bulletsonfloor.ini();
+		do bullets.ini();
+		do skyAttack.ini();
+		do clouds.ini();
+		do tornados.ini();
+		let bcount=0;
+
+		while(1=1){
+			let kb=Keyboard.keyPressed();
+			if(kb=32){
+				
+				do a.jump();
+			}
+			if(kb=130){
+				do a.moveLeft();
+			}
+			if(kb=132){
+				do a.moveRight();
+			}
+			if((kb=90)*(bcount=0)){
+				let bcount=20;
+				do bullets.new(a.getx()+20,a.gety());
+			}
+
+			do a.update();
+			do bullets.allUpdate();
+			do bulletsonfloor.allUpdate(a);
+			do skyAttack.allUpdate(a);
+			do clouds.allUpdate(a);
+			do tornados.allUpdate(a);
+			
+			do Sys.wait(30);
+			if(bcount>0){
+				let bcount=bcount-1;
+			}
+		}
+		return;
+	}
+}

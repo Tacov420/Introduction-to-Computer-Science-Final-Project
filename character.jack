@@ -1,0 +1,605 @@
+class character{
+	field int x;
+	field int y;
+	field int v;
+	field int faceRight;
+	field int height;
+	field int floor;
+	
+	method void drawpixel(int x,int y){
+		if(~((x>511)+(x<0)+(y>255)+(y<0))){
+			do Screen.drawPixel(x,y);
+			
+		}
+		return;
+	}
+		
+	
+	constructor character new(int xx,int yy){
+		let height=42;
+		let x=xx;
+		let y=yy;
+		let v=0;
+		let faceRight=1;
+		let floor=170;
+		do drawShape(1);
+		return this;
+	}
+	
+	method void drawShape(int color){
+		do Screen.setColor(color);
+		if(faceRight=1){
+			do drawRight();
+		}else{
+			do drawLeft();
+		}
+		return;
+	}
+	method void drawRight(){
+		do drawpixel(x+2,25+y);
+		do drawpixel(x+2,26+y);
+		do drawpixel(x+3,17+y);
+		do drawpixel(x+3,18+y);
+		do drawpixel(x+3,19+y);
+		do drawpixel(x+3,20+y);
+		do drawpixel(x+3,21+y);
+		do drawpixel(x+3,22+y);
+		do drawpixel(x+3,25+y);
+		do drawpixel(x+3,27+y);
+		do drawpixel(x+4,14+y);
+		do drawpixel(x+4,15+y);
+		do drawpixel(x+4,16+y);
+		do drawpixel(x+4,22+y);
+		do drawpixel(x+4,23+y);
+		do drawpixel(x+4,24+y);
+		do drawpixel(x+4,25+y);
+		do drawpixel(x+4,28+y);
+		do drawpixel(x+4,29+y);
+		do drawpixel(x+5,13+y);
+		do drawpixel(x+5,24+y);
+		do drawpixel(x+5,25+y);
+		do drawpixel(x+5,26+y);
+		do drawpixel(x+5,29+y);
+		do drawpixel(x+5,30+y);
+		do drawpixel(x+6,7+y);
+		do drawpixel(x+6,8+y);
+		do drawpixel(x+6,9+y);
+		do drawpixel(x+6,10+y);
+		do drawpixel(x+6,11+y);
+		do drawpixel(x+6,12+y);
+		do drawpixel(x+6,13+y);
+		do drawpixel(x+6,25+y);
+		do drawpixel(x+6,26+y);
+		do drawpixel(x+6,30+y);
+		do drawpixel(x+6,34+y);
+		do drawpixel(x+6,35+y);
+		do drawpixel(x+6,36+y);
+		do drawpixel(x+6,37+y);
+		do drawpixel(x+6,38+y);
+		do drawpixel(x+7,4+y);
+		do drawpixel(x+7,5+y);
+		do drawpixel(x+7,6+y);
+		do drawpixel(x+7,13+y);
+		do drawpixel(x+7,26+y);
+		do drawpixel(x+7,30+y);
+		do drawpixel(x+7,31+y);
+		do drawpixel(x+7,32+y);
+		do drawpixel(x+7,33+y);
+		do drawpixel(x+7,34+y);
+		do drawpixel(x+7,35+y);
+		do drawpixel(x+7,36+y);
+		do drawpixel(x+7,37+y);
+		do drawpixel(x+7,38+y);
+		do drawpixel(x+8,3+y);
+		do drawpixel(x+8,26+y);
+		do drawpixel(x+8,27+y);
+		do drawpixel(x+8,29+y);
+		do drawpixel(x+8,30+y);
+		do drawpixel(x+8,31+y);
+		do drawpixel(x+8,34+y);
+		do drawpixel(x+8,36+y);
+		do drawpixel(x+8,38+y);
+		do drawpixel(x+9,3+y);
+		do drawpixel(x+9,7+y);
+		do drawpixel(x+9,8+y);
+		do drawpixel(x+9,9+y);
+		do drawpixel(x+9,10+y);
+		do drawpixel(x+9,26+y);
+		do drawpixel(x+9,27+y);
+		do drawpixel(x+9,28+y);
+		do drawpixel(x+9,29+y);
+		do drawpixel(x+9,30+y);
+		do drawpixel(x+9,33+y);
+		do drawpixel(x+9,34+y);
+		do drawpixel(x+9,36+y);
+		do drawpixel(x+9,38+y);
+		do drawpixel(x+9,39+y);
+		do drawpixel(x+10,2+y);
+		do drawpixel(x+10,6+y);
+		do drawpixel(x+10,11+y);
+		do drawpixel(x+10,12+y);
+		do drawpixel(x+10,27+y);
+		do drawpixel(x+10,29+y);
+		do drawpixel(x+10,33+y);
+		do drawpixel(x+10,35+y);
+		do drawpixel(x+10,37+y);
+		do drawpixel(x+10,38+y);
+		do drawpixel(x+10,39+y);
+		do drawpixel(x+10,40+y);
+		do drawpixel(x+10,41+y);
+		do drawpixel(x+11,2+y);
+		do drawpixel(x+11,3+y);
+		do drawpixel(x+11,4+y);
+		do drawpixel(x+11,5+y);
+		do drawpixel(x+11,12+y);
+		do drawpixel(x+11,27+y);
+		do drawpixel(x+11,28+y);
+		do drawpixel(x+11,29+y);
+		do drawpixel(x+11,32+y);
+		do drawpixel(x+11,33+y);
+		do drawpixel(x+11,35+y);
+		do drawpixel(x+11,37+y);
+		do drawpixel(x+11,38+y);
+		do drawpixel(x+11,39+y);
+		do drawpixel(x+11,40+y);
+		do drawpixel(x+11,41+y);
+		do drawpixel(x+12,1+y);
+		do drawpixel(x+12,2+y);
+		do drawpixel(x+12,12+y);
+		do drawpixel(x+12,27+y);
+		do drawpixel(x+12,28+y);
+		do drawpixel(x+12,31+y);
+		do drawpixel(x+12,32+y);
+		do drawpixel(x+12,34+y);
+		do drawpixel(x+12,36+y);
+		do drawpixel(x+12,37+y);
+		do drawpixel(x+13,12+y);
+		do drawpixel(x+13,20+y);
+		do drawpixel(x+13,21+y);
+		do drawpixel(x+13,22+y);
+		do drawpixel(x+13,23+y);
+		do drawpixel(x+13,27+y);
+		do drawpixel(x+13,30+y);
+		do drawpixel(x+13,31+y);
+		do drawpixel(x+13,33+y);
+		do drawpixel(x+13,34+y);
+		do drawpixel(x+13,35+y);
+		do drawpixel(x+13,36+y);
+		do drawpixel(x+13,37+y);
+		do drawpixel(x+13,38+y);
+		do drawpixel(x+13,39+y);
+		do drawpixel(x+13,40+y);
+		do drawpixel(x+14,12+y);
+		do drawpixel(x+14,19+y);
+		do drawpixel(x+14,20+y);
+		do drawpixel(x+14,21+y);
+		do drawpixel(x+14,22+y);
+		do drawpixel(x+14,23+y);
+		do drawpixel(x+14,27+y);
+		do drawpixel(x+14,29+y);
+		do drawpixel(x+14,30+y);
+		do drawpixel(x+14,32+y);
+		do drawpixel(x+14,33+y);
+		do drawpixel(x+14,35+y);
+		do drawpixel(x+14,36+y);
+		do drawpixel(x+14,37+y);
+		do drawpixel(x+14,38+y);
+		do drawpixel(x+14,39+y);
+		do drawpixel(x+14,40+y);
+		do drawpixel(x+14,41+y);
+		do drawpixel(x+15,12+y);
+		do drawpixel(x+15,19+y);
+		do drawpixel(x+15,20+y);
+		do drawpixel(x+15,21+y);
+		do drawpixel(x+15,22+y);
+		do drawpixel(x+15,23+y);
+		do drawpixel(x+15,27+y);
+		do drawpixel(x+15,28+y);
+		do drawpixel(x+15,29+y);
+		do drawpixel(x+15,31+y);
+		do drawpixel(x+15,32+y);
+		do drawpixel(x+15,34+y);
+		do drawpixel(x+15,35+y);
+		do drawpixel(x+15,36+y);
+		do drawpixel(x+15,37+y);
+		do drawpixel(x+15,38+y);
+		do drawpixel(x+15,39+y);
+		do drawpixel(x+16,4+y);
+		do drawpixel(x+16,12+y);
+		do drawpixel(x+16,20+y);
+		do drawpixel(x+16,21+y);
+		do drawpixel(x+16,22+y);
+		do drawpixel(x+16,23+y);
+		do drawpixel(x+16,27+y);
+		do drawpixel(x+16,28+y);
+		do drawpixel(x+16,29+y);
+		do drawpixel(x+16,30+y);
+		do drawpixel(x+16,31+y);
+		do drawpixel(x+16,33+y);
+		do drawpixel(x+16,34+y);
+		do drawpixel(x+16,35+y);
+		do drawpixel(x+16,36+y);
+		do drawpixel(x+16,37+y);
+		do drawpixel(x+17,1+y);
+		do drawpixel(x+17,2+y);
+		do drawpixel(x+17,3+y);
+		do drawpixel(x+17,4+y);
+		do drawpixel(x+17,5+y);
+		do drawpixel(x+17,10+y);
+		do drawpixel(x+17,11+y);
+		do drawpixel(x+17,21+y);
+		do drawpixel(x+17,22+y);
+		do drawpixel(x+17,27+y);
+		do drawpixel(x+17,28+y);
+		do drawpixel(x+17,30+y);
+		do drawpixel(x+17,31+y);
+		do drawpixel(x+17,32+y);
+		do drawpixel(x+17,33+y);
+		do drawpixel(x+17,34+y);
+		do drawpixel(x+17,36+y);
+		do drawpixel(x+17,37+y);
+		do drawpixel(x+18,2+y);
+		do drawpixel(x+18,7+y);
+		do drawpixel(x+18,8+y);
+		do drawpixel(x+18,9+y);
+		do drawpixel(x+18,28+y);
+		do drawpixel(x+18,29+y);
+		do drawpixel(x+18,30+y);
+		do drawpixel(x+18,31+y);
+		do drawpixel(x+18,32+y);
+		do drawpixel(x+18,33+y);
+		do drawpixel(x+18,34+y);
+		do drawpixel(x+18,35+y);
+		do drawpixel(x+18,36+y);
+		do drawpixel(x+19,3+y);
+		do drawpixel(x+19,26+y);
+		do drawpixel(x+19,32+y);
+		do drawpixel(x+19,33+y);
+		do drawpixel(x+19,34+y);
+		do drawpixel(x+20,4+y);
+		do drawpixel(x+20,5+y);
+		do drawpixel(x+20,12+y);
+		do drawpixel(x+20,26+y);
+		do drawpixel(x+21,6+y);
+		do drawpixel(x+21,7+y);
+		do drawpixel(x+21,8+y);
+		do drawpixel(x+21,9+y);
+		do drawpixel(x+21,10+y);
+		do drawpixel(x+21,13+y);
+		do drawpixel(x+21,20+y);
+		do drawpixel(x+21,21+y);
+		do drawpixel(x+21,22+y);
+		do drawpixel(x+21,23+y);
+		do drawpixel(x+21,24+y);
+		do drawpixel(x+21,25+y);
+		do drawpixel(x+22,14+y);
+		do drawpixel(x+22,19+y);
+		do drawpixel(x+22,20+y);
+		do drawpixel(x+22,21+y);
+		do drawpixel(x+22,22+y);
+		do drawpixel(x+22,23+y);
+		do drawpixel(x+22,24+y);
+		do drawpixel(x+23,15+y);
+		do drawpixel(x+23,16+y);
+		do drawpixel(x+23,17+y);
+		do drawpixel(x+23,18+y);
+		do drawpixel(x+23,19+y);
+		do drawpixel(x+23,20+y);
+		do drawpixel(x+23,21+y);
+		return;
+	}
+	
+	method void drawLeft(){
+		do drawpixel(x+1,15+y);
+		do drawpixel(x+1,16+y);
+		do drawpixel(x+1,17+y);
+		do drawpixel(x+1,18+y);
+		do drawpixel(x+1,19+y);
+		do drawpixel(x+1,20+y);
+		do drawpixel(x+1,21+y);
+		do drawpixel(x+2,14+y);
+		do drawpixel(x+2,19+y);
+		do drawpixel(x+2,20+y);
+		do drawpixel(x+2,21+y);
+		do drawpixel(x+2,22+y);
+		do drawpixel(x+2,23+y);
+		do drawpixel(x+2,24+y);
+		do drawpixel(x+3,6+y);
+		do drawpixel(x+3,7+y);
+		do drawpixel(x+3,8+y);
+		do drawpixel(x+3,9+y);
+		do drawpixel(x+3,10+y);
+		do drawpixel(x+3,13+y);
+		do drawpixel(x+3,20+y);
+		do drawpixel(x+3,21+y);
+		do drawpixel(x+3,22+y);
+		do drawpixel(x+3,23+y);
+		do drawpixel(x+3,24+y);
+		do drawpixel(x+3,25+y);
+		do drawpixel(x+4,4+y);
+		do drawpixel(x+4,5+y);
+		do drawpixel(x+4,12+y);
+		do drawpixel(x+4,26+y);
+		do drawpixel(x+5,3+y);
+		do drawpixel(x+5,26+y);
+		do drawpixel(x+5,32+y);
+		do drawpixel(x+5,33+y);
+		do drawpixel(x+5,34+y);
+		do drawpixel(x+6,2+y);
+		do drawpixel(x+6,7+y);
+		do drawpixel(x+6,8+y);
+		do drawpixel(x+6,9+y);
+		do drawpixel(x+6,28+y);
+		do drawpixel(x+6,29+y);
+		do drawpixel(x+6,30+y);
+		do drawpixel(x+6,31+y);
+		do drawpixel(x+6,32+y);
+		do drawpixel(x+6,33+y);
+		do drawpixel(x+6,34+y);
+		do drawpixel(x+6,35+y);
+		do drawpixel(x+6,36+y);
+		do drawpixel(x+7,1+y);
+		do drawpixel(x+7,2+y);
+		do drawpixel(x+7,3+y);
+		do drawpixel(x+7,4+y);
+		do drawpixel(x+7,5+y);
+		do drawpixel(x+7,10+y);
+		do drawpixel(x+7,11+y);
+		do drawpixel(x+7,21+y);
+		do drawpixel(x+7,22+y);
+		do drawpixel(x+7,27+y);
+		do drawpixel(x+7,28+y);
+		do drawpixel(x+7,30+y);
+		do drawpixel(x+7,31+y);
+		do drawpixel(x+7,32+y);
+		do drawpixel(x+7,33+y);
+		do drawpixel(x+7,34+y);
+		do drawpixel(x+7,36+y);
+		do drawpixel(x+7,37+y);
+		do drawpixel(x+8,12+y);
+		do drawpixel(x+8,20+y);
+		do drawpixel(x+8,21+y);
+		do drawpixel(x+8,22+y);
+		do drawpixel(x+8,23+y);
+		do drawpixel(x+8,27+y);
+		do drawpixel(x+8,28+y);
+		do drawpixel(x+8,29+y);
+		do drawpixel(x+8,30+y);
+		do drawpixel(x+8,31+y);
+		do drawpixel(x+8,34+y);
+		do drawpixel(x+8,35+y);
+		do drawpixel(x+8,36+y);
+		do drawpixel(x+8,37+y);
+		do drawpixel(x+8,38+y);
+		do drawpixel(x+9,12+y);
+		do drawpixel(x+9,19+y);
+		do drawpixel(x+9,20+y);
+		do drawpixel(x+9,21+y);
+		do drawpixel(x+9,22+y);
+		do drawpixel(x+9,23+y);
+		do drawpixel(x+9,27+y);
+		do drawpixel(x+9,28+y);
+		do drawpixel(x+9,29+y);
+		do drawpixel(x+9,31+y);
+		do drawpixel(x+9,32+y);
+		do drawpixel(x+9,34+y);
+		do drawpixel(x+9,35+y);
+		do drawpixel(x+9,36+y);
+		do drawpixel(x+9,37+y);
+		do drawpixel(x+9,38+y);
+		do drawpixel(x+9,39+y);
+		do drawpixel(x+10,12+y);
+		do drawpixel(x+10,19+y);
+		do drawpixel(x+10,20+y);
+		do drawpixel(x+10,21+y);
+		do drawpixel(x+10,22+y);
+		do drawpixel(x+10,23+y);
+		do drawpixel(x+10,27+y);
+		do drawpixel(x+10,29+y);
+		do drawpixel(x+10,30+y);
+		do drawpixel(x+10,32+y);
+		do drawpixel(x+10,33+y);
+		do drawpixel(x+10,35+y);
+		do drawpixel(x+10,36+y);
+		do drawpixel(x+10,37+y);
+		do drawpixel(x+10,38+y);
+		do drawpixel(x+10,39+y);
+		do drawpixel(x+10,40+y);
+		do drawpixel(x+10,41+y);
+		do drawpixel(x+11,12+y);
+		do drawpixel(x+11,20+y);
+		do drawpixel(x+11,21+y);
+		do drawpixel(x+11,22+y);
+		do drawpixel(x+11,23+y);
+		do drawpixel(x+11,27+y);
+		do drawpixel(x+11,30+y);
+		do drawpixel(x+11,31+y);
+		do drawpixel(x+11,33+y);
+		do drawpixel(x+11,34+y);
+		do drawpixel(x+11,35+y);
+		do drawpixel(x+11,36+y);
+		do drawpixel(x+11,37+y);
+		do drawpixel(x+11,38+y);
+		do drawpixel(x+11,39+y);
+		do drawpixel(x+11,40+y);
+		do drawpixel(x+12,1+y);
+		do drawpixel(x+12,2+y);
+		do drawpixel(x+12,12+y);
+		do drawpixel(x+12,27+y);
+		do drawpixel(x+12,28+y);
+		do drawpixel(x+12,31+y);
+		do drawpixel(x+12,32+y);
+		do drawpixel(x+12,34+y);
+		do drawpixel(x+12,36+y);
+		do drawpixel(x+12,37+y);
+		do drawpixel(x+13,2+y);
+		do drawpixel(x+13,3+y);
+		do drawpixel(x+13,4+y);
+		do drawpixel(x+13,5+y);
+		do drawpixel(x+13,12+y);
+		do drawpixel(x+13,27+y);
+		do drawpixel(x+13,28+y);
+		do drawpixel(x+13,29+y);
+		do drawpixel(x+13,32+y);
+		do drawpixel(x+13,33+y);
+		do drawpixel(x+13,35+y);
+		do drawpixel(x+13,37+y);
+		do drawpixel(x+13,38+y);
+		do drawpixel(x+13,39+y);
+		do drawpixel(x+13,40+y);
+		do drawpixel(x+13,41+y);
+		do drawpixel(x+14,2+y);
+		do drawpixel(x+14,6+y);
+		do drawpixel(x+14,11+y);
+		do drawpixel(x+14,12+y);
+		do drawpixel(x+14,27+y);
+		do drawpixel(x+14,29+y);
+		do drawpixel(x+14,33+y);
+		do drawpixel(x+14,35+y);
+		do drawpixel(x+14,37+y);
+		do drawpixel(x+14,38+y);
+		do drawpixel(x+14,39+y);
+		do drawpixel(x+14,40+y);
+		do drawpixel(x+14,41+y);
+		do drawpixel(x+15,3+y);
+		do drawpixel(x+15,7+y);
+		do drawpixel(x+15,8+y);
+		do drawpixel(x+15,9+y);
+		do drawpixel(x+15,10+y);
+		do drawpixel(x+15,26+y);
+		do drawpixel(x+15,27+y);
+		do drawpixel(x+15,28+y);
+		do drawpixel(x+15,29+y);
+		do drawpixel(x+15,30+y);
+		do drawpixel(x+15,33+y);
+		do drawpixel(x+15,34+y);
+		do drawpixel(x+15,36+y);
+		do drawpixel(x+15,38+y);
+		do drawpixel(x+15,39+y);
+		do drawpixel(x+16,3+y);
+		do drawpixel(x+16,4+y);
+		do drawpixel(x+16,14+y);
+		do drawpixel(x+16,26+y);
+		do drawpixel(x+16,29+y);
+		do drawpixel(x+16,30+y);
+		do drawpixel(x+16,31+y);
+		do drawpixel(x+16,32+y);
+		do drawpixel(x+16,34+y);
+		do drawpixel(x+16,36+y);
+		do drawpixel(x+16,38+y);
+		do drawpixel(x+17,4+y);
+		do drawpixel(x+17,5+y);
+		do drawpixel(x+17,6+y);
+		do drawpixel(x+17,13+y);
+		do drawpixel(x+17,26+y);
+		do drawpixel(x+17,30+y);
+		do drawpixel(x+17,31+y);
+		do drawpixel(x+17,32+y);
+		do drawpixel(x+17,33+y);
+		do drawpixel(x+17,34+y);
+		do drawpixel(x+17,35+y);
+		do drawpixel(x+17,36+y);
+		do drawpixel(x+17,37+y);
+		do drawpixel(x+17,38+y);
+		do drawpixel(x+18,7+y);
+		do drawpixel(x+18,8+y);
+		do drawpixel(x+18,9+y);
+		do drawpixel(x+18,10+y);
+		do drawpixel(x+18,11+y);
+		do drawpixel(x+18,12+y);
+		do drawpixel(x+18,13+y);
+		do drawpixel(x+18,25+y);
+		do drawpixel(x+18,26+y);
+		do drawpixel(x+18,30+y);
+		do drawpixel(x+18,34+y);
+		do drawpixel(x+18,35+y);
+		do drawpixel(x+18,36+y);
+		do drawpixel(x+18,37+y);
+		do drawpixel(x+18,38+y);
+		do drawpixel(x+19,13+y);
+		do drawpixel(x+19,24+y);
+		do drawpixel(x+19,25+y);
+		do drawpixel(x+19,26+y);
+		do drawpixel(x+19,29+y);
+		do drawpixel(x+19,30+y);
+		do drawpixel(x+20,14+y);
+		do drawpixel(x+20,15+y);
+		do drawpixel(x+20,16+y);
+		do drawpixel(x+20,22+y);
+		do drawpixel(x+20,23+y);
+		do drawpixel(x+20,24+y);
+		do drawpixel(x+20,25+y);
+		do drawpixel(x+20,28+y);
+		do drawpixel(x+20,29+y);
+		do drawpixel(x+21,17+y);
+		do drawpixel(x+21,18+y);
+		do drawpixel(x+21,19+y);
+		do drawpixel(x+21,20+y);
+		do drawpixel(x+21,21+y);
+		do drawpixel(x+21,22+y);
+		do drawpixel(x+21,25+y);
+		do drawpixel(x+21,27+y);
+		do drawpixel(x+22,25+y);
+		do drawpixel(x+22,26+y);
+		return;
+	}
+	
+	method void moveLeft(){
+		do drawShape(0);
+		let faceRight=0;
+		let x=x-8;
+		if(x<0){
+			let x=0;
+		}
+		if(v=0){
+			do drawShape(1);
+		}
+		return;
+	}
+	method void moveRight(){
+		do drawShape(0);
+		let faceRight=1;
+		let x=x+8 ;
+		if(x>407){
+			let x=407;
+		}
+		if(v=0){
+			do drawShape(1);
+		}
+		return;
+	}
+	method void jump(){
+		if(y=floor){
+			let v=25;
+		}
+		return;
+	}
+	method void update(){
+		
+		if(~(v=0)){
+			do drawShape(0);
+			if(y-v>floor){
+				let y=floor;
+				
+			}
+			else{
+				let y=y-v;
+			}
+			do drawShape(1);
+		 }
+		if(y<floor){
+			let v=v-4;
+		}
+		else{
+			let v=0;
+		}		
+		return;
+	}
+	method int getx(){
+		return x;
+	}
+	method int gety(){
+		return y;
+	}
+	
+}

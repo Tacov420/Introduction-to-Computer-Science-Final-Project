@@ -1,0 +1,53 @@
+class Main{
+	function void main(){
+		var object a;
+		var char key;
+		var int count;
+
+		var HP test;
+
+		do objects.ini();
+		do objects.new(50,50);
+		do objects.new(80,80);
+		do objects.new(100,100);
+		let count=1;
+		
+		
+		let a=object.new(100,10);
+
+		let test = HP.new();
+
+		while (1=1){
+			let count=count+1;
+			if (count>10){
+				do test.changeHealth(-1);
+				do a.changeHealth(-1);
+				let count=1;
+			}
+			let key=Keyboard.keyPressed();
+			if (key=130){
+				do a.moveLeft();
+			}
+			if (key=131){
+				do a.moveUp();
+			}
+			if (key=132){
+				do a.moveRight();
+			}
+			if (key=133){
+				do a.moveDown();
+			}
+			if (key=32){
+				do a.jump(10);
+				do test.changeHealth(100);
+				do a.changeHealth(100);
+			}
+			do a.update();
+			//do objects.allTrack(a);
+			do Sys.wait(20);
+			
+			
+		}
+		return;
+	}
+}

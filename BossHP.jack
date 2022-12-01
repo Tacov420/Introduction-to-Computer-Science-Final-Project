@@ -1,0 +1,88 @@
+class BossHP{
+    static int health;
+	static int x;
+	static int y;
+	static int memAddress;
+	static int loc;
+
+    function void new(int xx,int yy,int m,int l){
+        let health = 2000;
+		let x = xx;
+		let y = yy;
+		let memAddress = m;
+		let loc = l;
+        return;
+    }
+
+    function void drawpixel(int x,int y){
+		if(~((x>511)+(x<0)+(y>255)+(y<0))){
+			do Screen.drawPixel(x,y);
+			
+		}
+		return;
+	}
+
+    function int getBossHealth(){
+		return health;
+	}
+
+    function void drawBossHPall(){
+		let memAddress = 16384+loc;
+		do Memory.poke(memAddress+0, 0);
+		do Memory.poke(memAddress+32, 992);
+		do Memory.poke(memAddress+64, 4088);
+		do Memory.poke(memAddress+96, 8188);
+		do Memory.poke(memAddress+128, 8188);
+		do Memory.poke(memAddress+160, 16382);
+		do Memory.poke(memAddress+192, 8322);
+		do Memory.poke(memAddress+224, 8322);
+		do Memory.poke(memAddress+256, 13286);
+		do Memory.poke(memAddress+288, 8060);
+		do Memory.poke(memAddress+320, 7740);
+		do Memory.poke(memAddress+352, 4088);
+		do Memory.poke(memAddress+384, 3224);
+		do Memory.poke(memAddress+416, 3224);
+		do Memory.poke(memAddress+448, 0);
+		do Memory.poke(memAddress+480, 0);
+        do Screen.setColor(0);
+        do Screen.drawRectangle(x-2, y-2, x+404, y+12);
+        do Screen.setColor(1);
+        do Screen.drawRectangle(x, y, x+400, y+10);
+        return;
+    }
+
+    function void drawBossHealth(){
+        do Screen.setColor(0);
+        do Screen.drawRectangle(x,y,(2000-health)/5+x-1,y+10);
+        do Screen.setColor(1);
+        do Screen.drawRectangle((2000-health)/5+x,y,x+400,y+10);
+        return;
+    }
+
+    function void lossBosshealth(){
+		let health = health - 40;
+		if (health < 0){
+			let health = 0;
+		}
+		do BossHP.drawBossHealth();
+		return;
+	}
+
+	function void eraseBossHealth(){
+		do Screen.setColor(0);
+		do Screen.drawRectangle(x, y, x+400, y+10);
+		return;
+	}
+	
+    function void changeBossHealth(int c){
+		let health=health+c;
+		if(health>2000){
+			let health=2000;
+		}
+		if (health<0){
+			let health=0;
+		}
+		do BossHP.drawBossHealth();
+		return;
+	}
+}

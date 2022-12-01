@@ -1,0 +1,130 @@
+class bulletsonfloor{
+	field int x;
+	field int y;
+	
+	field bulletsonfloor last;
+	field bulletsonfloor next;
+	
+	
+	static bulletsonfloor start;
+	
+	method void drawpixel(int x,int y){
+		if(~((x>511)+(x<0)+(y>255)+(y<0))){
+			do Screen.drawPixel(x,y);
+			
+		}
+		return;
+	}
+
+	constructor bulletsonfloor initnew(){
+		
+		let last=null;
+		let next=null;
+		return this;
+	}
+	constructor bulletsonfloor new(int xx,int yy){
+		
+		let x=xx;
+		let y=yy;
+		
+		do drawShape(1);
+		let next=start.rnext();
+		do start.wnext(this);
+		if (~(next=null)){
+			do next.wlast(this);
+		}
+		let last=start;
+		return this;
+	}
+	
+	function void ini(){
+		let start=bulletsonfloor.initnew();
+		return;
+	}
+	
+	method void drawShape(int color){
+		
+		var int i;
+		var int j;
+		do Screen.setColor(color);
+		let i=0;
+		while(i<5){
+			let j=0;
+			while(j<5){
+				do drawpixel(x+i,y+j);
+				let j=j+1;
+			}
+			let i=i+1;
+		}
+		return;
+	}
+	
+	
+	
+	method bulletsonfloor rnext(){
+		return next;
+	}
+	method bulletsonfloor rlast(){
+		return last;
+	}
+	method void wnext(bulletsonfloor n){
+		let next=n;
+		return;
+	}
+	method void wlast(bulletsonfloor l){
+		let last=l;
+		return;
+	}
+	
+	function void allUpdate(character me){
+		var bulletsonfloor current;
+		let current=start.rnext();
+		while(~(current=null)){
+			if((current.getx()-me.getx()>0)*(current.getx()-me.getx()<24)){
+				do current.drawShape(0);
+				do bullets.changeBullet(1);
+				let current=current.deleteObject();
+			}
+			else{
+				let current=current.rnext();
+			}
+		}
+		return;
+	}
+	
+	
+	method void dispose(){
+		do drawShape(0);
+		do Memory.deAlloc(this);
+		return;
+	}
+	method bulletsonfloor deleteObject(){
+		var bulletsonfloor r;
+		let r=next;
+		if (~(last=null)){
+			do last.wnext(next);
+		}
+		if (~(next=null)){
+			do next.wlast(last);
+		}
+		do dispose();
+		return r;
+		
+	}
+	method int getx(){
+		return x;
+	}
+	method int gety(){
+		return y;
+	}
+	function void deleteall(){
+		var bulletsonfloor current;
+		let current=start.rnext();
+		while(~(current=null)){
+			let current=current.deleteObject();
+		}
+		return;
+	}
+	
+	
+}	

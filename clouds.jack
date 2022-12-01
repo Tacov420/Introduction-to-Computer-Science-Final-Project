@@ -1,0 +1,259 @@
+class clouds{
+	field int x;
+	field int y;
+	field clouds last;
+	field clouds next;
+	static int count;
+	
+	static clouds start;
+
+	
+	method void drawpixel(int x,int y){
+		if(~((x>429)+(x<0)+(y>255)+(y<0))){
+			do Screen.drawPixel(x,y);
+			
+		}
+		return;
+	}
+
+	constructor clouds initnew(){
+		let last=null;
+		let next=null;
+		return this;
+	}
+	constructor clouds new(){
+		
+		let x=429;
+		let y=110;
+		
+		
+		
+		do drawShape(1);
+		let next=start.rnext();
+		do start.wnext(this);
+		if (~(next=null)){
+			do next.wlast(this);
+		}
+		let last=start;
+		return this;
+	}
+	
+	function void ini(){
+		let start=clouds.initnew();
+		let count=0;
+		return;
+	}
+	
+	method void drawShape(int color){
+		
+		
+		do Screen.setColor(color);
+    do drawpixel(x+1,24+y);
+    do drawpixel(x+1,25+y);
+    do drawpixel(x+1,29+y);
+    do drawpixel(x+2,22+y);
+    do drawpixel(x+2,31+y);
+    do drawpixel(x+3,21+y);
+    do drawpixel(x+3,32+y);
+    do drawpixel(x+4,21+y);
+    do drawpixel(x+5,20+y);
+    do drawpixel(x+5,33+y);
+    do drawpixel(x+6,20+y);
+    do drawpixel(x+8,30+y);
+    do drawpixel(x+8,34+y);
+    do drawpixel(x+9,15+y);
+    do drawpixel(x+9,16+y);
+    do drawpixel(x+9,36+y);
+    do drawpixel(x+10,14+y);
+    do drawpixel(x+11,13+y);
+    do drawpixel(x+11,20+y);
+    do drawpixel(x+11,37+y);
+    do drawpixel(x+12,12+y);
+    do drawpixel(x+12,37+y);
+    do drawpixel(x+13,11+y);
+    do drawpixel(x+13,21+y);
+    do drawpixel(x+13,37+y);
+    do drawpixel(x+14,29+y);
+    do drawpixel(x+14,30+y);
+    do drawpixel(x+14,31+y);
+    do drawpixel(x+14,32+y);
+    do drawpixel(x+14,33+y);
+    do drawpixel(x+15,10+y);
+    do drawpixel(x+15,27+y);
+    do drawpixel(x+15,35+y);
+    do drawpixel(x+15,36+y);
+    do drawpixel(x+16,10+y);
+    do drawpixel(x+16,25+y);
+    do drawpixel(x+16,36+y);
+    do drawpixel(x+17,10+y);
+    do drawpixel(x+17,37+y);
+    do drawpixel(x+18,7+y);
+    do drawpixel(x+18,10+y);
+    do drawpixel(x+18,38+y);
+    do drawpixel(x+19,5+y);
+    do drawpixel(x+19,23+y);
+    do drawpixel(x+20,4+y);
+    do drawpixel(x+20,10+y);
+    do drawpixel(x+20,39+y);
+    do drawpixel(x+21,3+y);
+    do drawpixel(x+21,10+y);
+    do drawpixel(x+22,22+y);
+    do drawpixel(x+23,2+y);
+    do drawpixel(x+25,1+y);
+    do drawpixel(x+28,39+y);
+    do drawpixel(x+29,0+y);
+    do drawpixel(x+30,0+y);
+    do drawpixel(x+30,34+y);
+    do drawpixel(x+30,35+y);
+    do drawpixel(x+31,12+y);
+    do drawpixel(x+31,36+y);
+    do drawpixel(x+32,37+y);
+    do drawpixel(x+34,1+y);
+    do drawpixel(x+34,38+y);
+    do drawpixel(x+35,8+y);
+    do drawpixel(x+35,38+y);
+    do drawpixel(x+36,2+y);
+    do drawpixel(x+36,38+y);
+    do drawpixel(x+37,7+y);
+    do drawpixel(x+38,3+y);
+    do drawpixel(x+38,7+y);
+    do drawpixel(x+38,37+y);
+    do drawpixel(x+39,4+y);
+    do drawpixel(x+39,7+y);
+    do drawpixel(x+40,5+y);
+    do drawpixel(x+40,6+y);
+    do drawpixel(x+40,7+y);
+    do drawpixel(x+41,7+y);
+    do drawpixel(x+41,33+y);
+    do drawpixel(x+42,7+y);
+    do drawpixel(x+42,35+y);
+    do drawpixel(x+43,7+y);
+    do drawpixel(x+43,18+y);
+    do drawpixel(x+44,18+y);
+    do drawpixel(x+45,8+y);
+    do drawpixel(x+45,11+y);
+    do drawpixel(x+46,18+y);
+    do drawpixel(x+47,10+y);
+    do drawpixel(x+47,18+y);
+    do drawpixel(x+48,10+y);
+    do drawpixel(x+48,18+y);
+    do drawpixel(x+48,35+y);
+    do drawpixel(x+49,10+y);
+    do drawpixel(x+49,35+y);
+    do drawpixel(x+50,10+y);
+    do drawpixel(x+50,19+y);
+    do drawpixel(x+51,10+y);
+    do drawpixel(x+51,34+y);
+    do drawpixel(x+52,10+y);
+    do drawpixel(x+52,20+y);
+    do drawpixel(x+52,33+y);
+    do drawpixel(x+53,21+y);
+    do drawpixel(x+53,32+y);
+    do drawpixel(x+54,11+y);
+    do drawpixel(x+54,23+y);
+    do drawpixel(x+54,31+y);
+    do drawpixel(x+55,11+y);
+    do drawpixel(x+55,25+y);
+    do drawpixel(x+55,26+y);
+    do drawpixel(x+55,27+y);
+    do drawpixel(x+55,28+y);
+    do drawpixel(x+55,29+y);
+    do drawpixel(x+56,12+y);
+    do drawpixel(x+57,13+y);
+    do drawpixel(x+57,25+y);
+    do drawpixel(x+58,14+y);
+    do drawpixel(x+59,16+y);
+    do drawpixel(x+59,22+y);
+
+		return;
+	}
+	
+	method void moveDown(){
+		do drawShape(0);
+    if(y<160){
+      let y=y+3;
+    }
+		let x=x-6 ;
+		if(x<0){
+			let x=0;
+		}
+		do drawShape(1);
+		return;
+	}
+	
+	method clouds rnext(){ 
+		return next;
+	}
+	method clouds rlast(){
+		return last;
+	}
+	method void wnext(clouds n){
+		let next=n;
+		return;
+	}
+	method void wlast(clouds l){
+		let last=l;
+		return;
+	}
+	
+	function void allUpdate(character me){
+		var clouds current;
+		let current=start.rnext();
+		
+		let count=count+1;
+		if (count>45){
+			do clouds.new();
+			let count=0;
+		}
+		while(~(current=null)){
+			if(current.getx()=0){
+				let current=current.deleteObject();
+			}else{
+				if(((current.getx()-8)-me.getx()<24)*(me.getx()-(current.getx()-8)<60)*((current.gety())-me.gety()<42)*(me.gety()-(current.gety())<40)){//改長寬要改這裡
+					let current=current.deleteObject();
+					do HP.losshealth();
+				}else{
+					do current.moveDown();
+					let current=current.rnext();
+				}	
+			}
+		}
+		return;
+	}
+	
+	
+	method void dispose(){
+		do drawShape(0);
+		do Memory.deAlloc(this);
+		return;
+	}
+	method clouds deleteObject(){
+		var clouds r;
+		let r=next;
+		if (~(last=null)){
+			do last.wnext(next);
+		}
+		if (~(next=null)){
+			do next.wlast(last);
+		}
+		do dispose();
+		return r;
+		
+	}
+	method int getx(){
+		return x;
+	}
+	method int gety(){
+		return y;
+	}
+	function void deleteall(){
+		var clouds current;
+		let current=start.rnext();
+		while(~(current=null)){
+			let current=current.deleteObject();
+		}
+		return;
+	}
+	
+	
+}	

@@ -1,0 +1,40 @@
+class leaf{
+
+    function void drawrectangle(int x1,int y1,int x2,int y2){
+        if(((x1>511)+(x1<0)+(y1>255)+(y2<0))){
+			return;
+		}
+        if(x2>511){
+            let x2 = 511;
+        }
+        if(y2>255){
+            let y2 = 255;
+        }
+        do Screen.drawRectangle(x1,y1,x2,y2);
+        return;
+    }
+
+    function void drawbitmap(int memAddress,int location) {
+        let memAddress = 16384+location;
+        do Memory.poke(memAddress+0, -1);
+        do Memory.poke(memAddress+32, -1);
+        do Memory.poke(memAddress+64, -1);
+        do Memory.poke(memAddress+96, -1);
+        do Memory.poke(memAddress+128, -1);
+        do Memory.poke(memAddress+160, -1);
+        do Memory.poke(memAddress+192, -1);
+        do Memory.poke(memAddress+224, -129);
+        do Memory.poke(memAddress+256, -12513);
+        do Memory.poke(memAddress+288, -12513);
+        do Memory.poke(memAddress+320, -28900);
+        do Memory.poke(memAddress+352, 3096);
+        do Memory.poke(memAddress+384, 2048);
+        do Memory.poke(memAddress+416, 0);
+        do Memory.poke(memAddress+448, 0);
+        do Memory.poke(memAddress+480, 0);
+        return;
+    }
+
+
+    
+}

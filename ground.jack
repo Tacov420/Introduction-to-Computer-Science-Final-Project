@@ -1,0 +1,54 @@
+class ground{
+    field int x;
+    field int y;
+    field int loc;
+    field int memAddress;
+
+    constructor ground new(){
+        let x = 0;
+        let y = 212;
+        let loc = 6784;
+        return this;
+    }
+
+    function void drawrectangle(int x1,int y1,int x2,int y2){
+        if(((x1>511)+(x1<0)+(y1>255)+(y2<0))){
+			return;
+		}
+        if(x2>511){
+            let x2 = 511;
+        }
+        if(y2>255){
+            let y2 = 255;
+        }
+        do Screen.drawRectangle(x1,y1,x2,y2);
+        return;
+    }
+
+    method void drawbitmap(){
+        while(loc<6816){
+            let memAddress = 16384+loc;
+            do Memory.poke(memAddress+0, -1);
+            do Memory.poke(memAddress+32, 0);
+            do Memory.poke(memAddress+64, 0);
+            do Memory.poke(memAddress+96, -32767);
+            do Memory.poke(memAddress+128, -32767);
+            do Memory.poke(memAddress+160, -22389);
+            do Memory.poke(memAddress+192, -6005);
+            do Memory.poke(memAddress+224, -5745);
+            do Memory.poke(memAddress+256, -1057);
+            do Memory.poke(memAddress+288, -1);
+            do Memory.poke(memAddress+320, -1);
+            do Memory.poke(memAddress+352, -1);
+            do Memory.poke(memAddress+384, -1);
+            do Memory.poke(memAddress+416, -1);
+            do Memory.poke(memAddress+448, -1);
+            do Memory.poke(memAddress+480, -1);
+            let loc = loc + 1;
+        }
+        do Screen.drawRectangle(0,228,511,255);
+        return;
+    }
+
+    
+}

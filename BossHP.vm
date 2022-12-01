@@ -1,0 +1,278 @@
+function BossHP.new 0
+push constant 2000
+pop static 0
+push argument 0
+pop static 1
+push argument 1
+pop static 2
+push argument 2
+pop static 3
+push argument 3
+pop static 4
+push constant 0
+return
+function BossHP.drawpixel 0
+push argument 0
+push constant 511
+gt
+push argument 0
+push constant 0
+lt
+add
+push argument 1
+push constant 255
+gt
+add
+push argument 1
+push constant 0
+lt
+add
+not
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push argument 0
+push argument 1
+call Screen.drawPixel 2
+pop temp 0
+label IF_FALSE0
+push constant 0
+return
+function BossHP.getBossHealth 0
+push static 0
+return
+function BossHP.drawBossHPall 0
+push constant 16384
+push static 4
+add
+pop static 3
+push static 3
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 32
+add
+push constant 992
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 64
+add
+push constant 4088
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 96
+add
+push constant 8188
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 128
+add
+push constant 8188
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 160
+add
+push constant 16382
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 192
+add
+push constant 8322
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 224
+add
+push constant 8322
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 256
+add
+push constant 13286
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 288
+add
+push constant 8060
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 320
+add
+push constant 7740
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 352
+add
+push constant 4088
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 384
+add
+push constant 3224
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 416
+add
+push constant 3224
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push static 3
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push static 1
+push constant 2
+sub
+push static 2
+push constant 2
+sub
+push static 1
+push constant 404
+add
+push static 2
+push constant 12
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 1
+call Screen.setColor 1
+pop temp 0
+push static 1
+push static 2
+push static 1
+push constant 400
+add
+push static 2
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function BossHP.drawBossHealth 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push static 1
+push static 2
+push constant 2000
+push static 0
+sub
+push constant 5
+call Math.divide 2
+push static 1
+add
+push constant 1
+sub
+push static 2
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 1
+call Screen.setColor 1
+pop temp 0
+push constant 2000
+push static 0
+sub
+push constant 5
+call Math.divide 2
+push static 1
+add
+push static 2
+push static 1
+push constant 400
+add
+push static 2
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function BossHP.lossBosshealth 0
+push static 0
+push constant 40
+sub
+pop static 0
+push static 0
+push constant 0
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop static 0
+label IF_FALSE0
+call BossHP.drawBossHealth 0
+pop temp 0
+push constant 0
+return
+function BossHP.eraseBossHealth 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push static 1
+push static 2
+push static 1
+push constant 400
+add
+push static 2
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function BossHP.changeBossHealth 0
+push static 0
+push argument 0
+add
+pop static 0
+push static 0
+push constant 2000
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 2000
+pop static 0
+label IF_FALSE0
+push static 0
+push constant 0
+lt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+pop static 0
+label IF_FALSE1
+call BossHP.drawBossHealth 0
+pop temp 0
+push constant 0
+return

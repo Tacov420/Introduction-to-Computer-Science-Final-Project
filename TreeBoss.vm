@@ -1,0 +1,3975 @@
+function TreeBoss.drawrectangle 0
+push argument 0
+push constant 511
+gt
+push argument 0
+push constant 0
+lt
+add
+push argument 1
+push constant 255
+gt
+add
+push argument 3
+push constant 0
+lt
+add
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
+push argument 2
+push constant 511
+gt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 511
+pop argument 2
+label IF_FALSE1
+push argument 3
+push constant 255
+gt
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push constant 255
+pop argument 3
+label IF_FALSE2
+push argument 0
+push argument 1
+push argument 2
+push argument 3
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function TreeBoss.drawtree 0
+push argument 0
+push constant 0
+add
+push constant 0
+push argument 1
+add
+push argument 0
+push constant 0
+add
+push constant 7
+add
+push constant 0
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 0
+add
+push constant 8
+push argument 1
+add
+push argument 0
+push constant 0
+add
+push constant 7
+add
+push constant 8
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 0
+add
+push constant 16
+push argument 1
+add
+push argument 0
+push constant 0
+add
+push constant 7
+add
+push constant 16
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 0
+add
+push constant 24
+push argument 1
+add
+push argument 0
+push constant 0
+add
+push constant 7
+add
+push constant 24
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 0
+add
+push constant 32
+push argument 1
+add
+push argument 0
+push constant 0
+add
+push constant 7
+add
+push constant 32
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 0
+add
+push constant 40
+push argument 1
+add
+push argument 0
+push constant 0
+add
+push constant 7
+add
+push constant 40
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 0
+add
+push constant 48
+push argument 1
+add
+push argument 0
+push constant 0
+add
+push constant 7
+add
+push constant 48
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 8
+add
+push constant 0
+push argument 1
+add
+push argument 0
+push constant 8
+add
+push constant 7
+add
+push constant 0
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 8
+add
+push constant 8
+push argument 1
+add
+push argument 0
+push constant 8
+add
+push constant 7
+add
+push constant 8
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 8
+add
+push constant 16
+push argument 1
+add
+push argument 0
+push constant 8
+add
+push constant 7
+add
+push constant 16
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 8
+add
+push constant 24
+push argument 1
+add
+push argument 0
+push constant 8
+add
+push constant 7
+add
+push constant 24
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 8
+add
+push constant 32
+push argument 1
+add
+push argument 0
+push constant 8
+add
+push constant 7
+add
+push constant 32
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 8
+add
+push constant 40
+push argument 1
+add
+push argument 0
+push constant 8
+add
+push constant 7
+add
+push constant 40
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 8
+add
+push constant 208
+push argument 1
+add
+push argument 0
+push constant 8
+add
+push constant 7
+add
+push constant 208
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 16
+add
+push constant 0
+push argument 1
+add
+push argument 0
+push constant 16
+add
+push constant 7
+add
+push constant 0
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 16
+add
+push constant 8
+push argument 1
+add
+push argument 0
+push constant 16
+add
+push constant 7
+add
+push constant 8
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 16
+add
+push constant 16
+push argument 1
+add
+push argument 0
+push constant 16
+add
+push constant 7
+add
+push constant 16
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 16
+add
+push constant 24
+push argument 1
+add
+push argument 0
+push constant 16
+add
+push constant 7
+add
+push constant 24
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 16
+add
+push constant 32
+push argument 1
+add
+push argument 0
+push constant 16
+add
+push constant 7
+add
+push constant 32
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 16
+add
+push constant 40
+push argument 1
+add
+push argument 0
+push constant 16
+add
+push constant 7
+add
+push constant 40
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 16
+add
+push constant 104
+push argument 1
+add
+push argument 0
+push constant 16
+add
+push constant 7
+add
+push constant 104
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 16
+add
+push constant 112
+push argument 1
+add
+push argument 0
+push constant 16
+add
+push constant 7
+add
+push constant 112
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 16
+add
+push constant 200
+push argument 1
+add
+push argument 0
+push constant 16
+add
+push constant 7
+add
+push constant 200
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 16
+add
+push constant 208
+push argument 1
+add
+push argument 0
+push constant 16
+add
+push constant 7
+add
+push constant 208
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 0
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 0
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 8
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 8
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 16
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 16
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 24
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 24
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 32
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 32
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 48
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 48
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 56
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 56
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 64
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 64
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 88
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 88
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 96
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 96
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 104
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 104
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 112
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 112
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 120
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 120
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 128
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 128
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 136
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 136
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 144
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 144
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 152
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 152
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 160
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 160
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 168
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 168
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 176
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 176
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 184
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 184
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 192
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 192
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 200
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 200
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 24
+add
+push constant 208
+push argument 1
+add
+push argument 0
+push constant 24
+add
+push constant 7
+add
+push constant 208
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 0
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 0
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 8
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 8
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 16
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 16
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 24
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 24
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 32
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 32
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 40
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 40
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 48
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 48
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 56
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 56
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 64
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 64
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 72
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 72
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 80
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 80
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 88
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 88
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 96
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 96
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 104
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 104
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 112
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 112
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 120
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 120
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 128
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 128
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 136
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 136
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 144
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 144
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 152
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 152
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 160
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 160
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 168
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 168
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 176
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 176
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 184
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 184
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 192
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 192
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 200
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 200
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 208
+push argument 1
+add
+push argument 0
+push constant 32
+add
+push constant 7
+add
+push constant 208
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 0
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 0
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 8
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 8
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 16
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 16
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 24
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 24
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 32
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 32
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 40
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 40
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 48
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 48
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 80
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 80
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 88
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 88
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 96
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 96
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 104
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 104
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 112
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 112
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 120
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 120
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 144
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 144
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 152
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 152
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 160
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 160
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 168
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 168
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 176
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 176
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 184
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 184
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 192
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 192
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 200
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 200
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 40
+add
+push constant 208
+push argument 1
+add
+push argument 0
+push constant 40
+add
+push constant 7
+add
+push constant 208
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 0
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 0
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 8
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 8
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 16
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 16
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 24
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 24
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 32
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 32
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 40
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 40
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 48
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 48
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 56
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 56
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 64
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 64
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 72
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 72
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 80
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 80
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 88
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 88
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 96
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 96
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 104
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 104
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 112
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 112
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 152
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 152
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 160
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 160
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 168
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 168
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 176
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 176
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 184
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 184
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 192
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 192
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 200
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 200
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 48
+add
+push constant 208
+push argument 1
+add
+push argument 0
+push constant 48
+add
+push constant 7
+add
+push constant 208
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 0
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 0
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 8
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 8
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 16
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 16
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 24
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 24
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 32
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 32
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 40
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 40
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 48
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 48
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 56
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 56
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 64
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 64
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 72
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 72
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 80
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 80
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 88
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 88
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 96
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 96
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 104
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 104
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 112
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 112
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 120
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 120
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 144
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 144
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 152
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 152
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 160
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 160
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 168
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 168
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 176
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 176
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 184
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 184
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 192
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 192
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 200
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 200
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 56
+add
+push constant 208
+push argument 1
+add
+push argument 0
+push constant 56
+add
+push constant 7
+add
+push constant 208
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 0
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 0
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 8
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 8
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 16
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 16
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 24
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 24
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 32
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 32
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 40
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 40
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 88
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 88
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 96
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 96
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 104
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 104
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 112
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 112
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 120
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 120
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 128
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 128
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 136
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 136
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 144
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 144
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 152
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 152
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 160
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 160
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 168
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 168
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 176
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 176
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 184
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 184
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 192
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 192
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 208
+push argument 1
+add
+push argument 0
+push constant 64
+add
+push constant 7
+add
+push constant 208
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 0
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 0
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 8
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 8
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 16
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 16
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 24
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 24
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 32
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 32
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 40
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 40
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 48
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 48
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 56
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 56
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 64
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 64
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 72
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 72
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 80
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 80
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 88
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 88
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 96
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 96
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 104
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 104
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 112
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 112
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 120
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 120
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 128
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 128
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 136
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 136
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 144
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 144
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 152
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 152
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 160
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 160
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 168
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 168
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 176
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 176
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 200
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 200
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 72
+add
+push constant 208
+push argument 1
+add
+push argument 0
+push constant 72
+add
+push constant 7
+add
+push constant 208
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 0
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 0
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 8
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 8
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 16
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 16
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 24
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 24
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 32
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 32
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 40
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 40
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 48
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 48
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 56
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 56
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 64
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 64
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 72
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 72
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 80
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 80
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 88
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 88
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 96
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 96
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 104
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 104
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 112
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 112
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 120
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 120
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 128
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 128
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 136
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 136
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 144
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 144
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 152
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 152
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 160
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 160
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 168
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 168
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 176
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 176
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 184
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 184
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 192
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 192
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 200
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 200
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push argument 0
+push constant 80
+add
+push constant 208
+push argument 1
+add
+push argument 0
+push constant 80
+add
+push constant 7
+add
+push constant 208
+push argument 1
+add
+push constant 7
+add
+call TreeBoss.drawrectangle 4
+pop temp 0
+push constant 0
+return

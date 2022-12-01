@@ -1,0 +1,162 @@
+function leaf.drawrectangle 0
+push argument 0
+push constant 511
+gt
+push argument 0
+push constant 0
+lt
+add
+push argument 1
+push constant 255
+gt
+add
+push argument 3
+push constant 0
+lt
+add
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
+push argument 2
+push constant 511
+gt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 511
+pop argument 2
+label IF_FALSE1
+push argument 3
+push constant 255
+gt
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push constant 255
+pop argument 3
+label IF_FALSE2
+push argument 0
+push argument 1
+push argument 2
+push argument 3
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function leaf.drawbitmap 0
+push constant 16384
+push argument 1
+add
+pop argument 0
+push argument 0
+push constant 0
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 32
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 64
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 96
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 128
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 160
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 192
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 224
+add
+push constant 129
+neg
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 256
+add
+push constant 12513
+neg
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 288
+add
+push constant 12513
+neg
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 320
+add
+push constant 28900
+neg
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 352
+add
+push constant 3096
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 384
+add
+push constant 2048
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 416
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push argument 0
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return

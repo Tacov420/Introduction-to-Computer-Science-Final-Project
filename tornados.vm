@@ -1,0 +1,3443 @@
+function tornados.drawpixel 0
+push argument 0
+pop pointer 0
+push argument 1
+push constant 429
+gt
+push argument 1
+push constant 0
+lt
+add
+push argument 2
+push constant 255
+gt
+add
+push argument 2
+push constant 0
+lt
+add
+not
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push argument 1
+push argument 2
+call Screen.drawPixel 2
+pop temp 0
+label IF_FALSE0
+push constant 0
+return
+function tornados.initnew 0
+push constant 4
+call Memory.alloc 1
+pop pointer 0
+push constant 0
+pop this 2
+push constant 0
+pop this 3
+push pointer 0
+return
+function tornados.new 0
+push constant 4
+call Memory.alloc 1
+pop pointer 0
+push constant 429
+pop this 0
+push constant 110
+pop this 1
+push pointer 0
+push constant 1
+call tornados.drawShape 2
+pop temp 0
+push static 1
+call tornados.rnext 1
+pop this 3
+push static 1
+push pointer 0
+call tornados.wnext 2
+pop temp 0
+push this 3
+push constant 0
+eq
+not
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 3
+push pointer 0
+call tornados.wlast 2
+pop temp 0
+label IF_FALSE0
+push static 1
+pop this 2
+push pointer 0
+return
+function tornados.ini 0
+call tornados.initnew 0
+pop static 1
+push constant 0
+pop static 0
+push constant 0
+return
+function tornados.drawShape 0
+push argument 0
+pop pointer 0
+push argument 1
+call Screen.setColor 1
+pop temp 0
+push pointer 0
+push this 0
+push constant 0
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 0
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 1
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 1
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 1
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 1
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 1
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 1
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 1
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 1
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 1
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 1
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 2
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 3
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 7
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 4
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 7
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 5
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 7
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 6
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 7
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 7
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 7
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 8
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 9
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 10
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 4
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 5
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 6
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 11
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 3
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 4
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 5
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 12
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 2
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 3
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 4
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 5
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 7
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 13
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 1
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 2
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 3
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 4
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 7
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 14
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 1
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 2
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 3
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 7
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 15
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 7
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 16
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 7
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 13
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 14
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 15
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 17
+add
+push constant 25
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 7
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 11
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 12
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 16
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 17
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 18
+add
+push constant 24
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 19
+add
+push constant 8
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 19
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 19
+add
+push constant 10
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 19
+add
+push constant 18
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 19
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 19
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 19
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 19
+add
+push constant 22
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 19
+add
+push constant 23
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 20
+add
+push constant 9
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 20
+add
+push constant 19
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 20
+add
+push constant 20
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push pointer 0
+push this 0
+push constant 20
+add
+push constant 21
+push this 1
+add
+call tornados.drawpixel 3
+pop temp 0
+push constant 0
+return
+function tornados.moveDown 0
+push argument 0
+pop pointer 0
+push pointer 0
+push constant 0
+call tornados.drawShape 2
+pop temp 0
+push this 0
+push constant 300
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 1
+push constant 3
+add
+pop this 1
+push this 0
+push constant 6
+sub
+pop this 0
+goto IF_END0
+label IF_FALSE0
+push this 0
+push constant 15
+sub
+pop this 0
+push this 1
+push constant 6
+sub
+pop this 1
+label IF_END0
+push this 0
+push constant 0
+lt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+pop this 0
+label IF_FALSE1
+push pointer 0
+push constant 1
+call tornados.drawShape 2
+pop temp 0
+push constant 0
+return
+function tornados.rnext 0
+push argument 0
+pop pointer 0
+push this 3
+return
+function tornados.rlast 0
+push argument 0
+pop pointer 0
+push this 2
+return
+function tornados.wnext 0
+push argument 0
+pop pointer 0
+push argument 1
+pop this 3
+push constant 0
+return
+function tornados.wlast 0
+push argument 0
+pop pointer 0
+push argument 1
+pop this 2
+push constant 0
+return
+function tornados.allUpdate 1
+push static 1
+call tornados.rnext 1
+pop local 0
+push static 0
+push constant 1
+add
+pop static 0
+push static 0
+push constant 45
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+call tornados.new 0
+pop temp 0
+push constant 0
+pop static 0
+label IF_FALSE0
+label WHILE_EXP0
+push local 0
+push constant 0
+eq
+not
+not
+if-goto WHILE_END0
+push local 0
+call tornados.getx 1
+push constant 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push local 0
+call tornados.deleteObject 1
+pop local 0
+goto IF_END1
+label IF_FALSE1
+push local 0
+call tornados.getx 1
+push constant 8
+sub
+push argument 0
+call character.getx 1
+sub
+push constant 24
+lt
+push argument 0
+call character.getx 1
+push local 0
+call tornados.getx 1
+push constant 8
+sub
+sub
+push constant 40
+lt
+call Math.multiply 2
+push local 0
+call tornados.gety 1
+push argument 0
+call character.gety 1
+sub
+push constant 42
+lt
+call Math.multiply 2
+push argument 0
+call character.gety 1
+push local 0
+call tornados.gety 1
+sub
+push constant 60
+lt
+call Math.multiply 2
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push local 0
+call tornados.deleteObject 1
+pop local 0
+call HP.losshealth 0
+pop temp 0
+goto IF_END2
+label IF_FALSE2
+push local 0
+call tornados.moveDown 1
+pop temp 0
+push local 0
+call tornados.rnext 1
+pop local 0
+label IF_END2
+label IF_END1
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+return
+function tornados.dispose 0
+push argument 0
+pop pointer 0
+push pointer 0
+push constant 0
+call tornados.drawShape 2
+pop temp 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return
+function tornados.deleteObject 1
+push argument 0
+pop pointer 0
+push this 3
+pop local 0
+push this 2
+push constant 0
+eq
+not
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 2
+push this 3
+call tornados.wnext 2
+pop temp 0
+label IF_FALSE0
+push this 3
+push constant 0
+eq
+not
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push this 3
+push this 2
+call tornados.wlast 2
+pop temp 0
+label IF_FALSE1
+push pointer 0
+call tornados.dispose 1
+pop temp 0
+push local 0
+return
+function tornados.getx 0
+push argument 0
+pop pointer 0
+push this 0
+return
+function tornados.gety 0
+push argument 0
+pop pointer 0
+push this 1
+return
+function tornados.deleteall 1
+push static 1
+call tornados.rnext 1
+pop local 0
+label WHILE_EXP0
+push local 0
+push constant 0
+eq
+not
+not
+if-goto WHILE_END0
+push local 0
+call tornados.deleteObject 1
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+return
